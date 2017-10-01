@@ -1,0 +1,46 @@
+footer {
+    padding-top: 40px;
+    background-color: #3e4651;
+}
+footer .copy {
+    margin-top: 50px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase
+}
+footer .footer__list {
+
+}
+footer .footer__list li {
+    margin-bottom: 25px
+}
+footer .footer__list li a {
+    color:#fff;
+    font-weight: 500
+}
+footer .footer__list li a:hover {
+    text-decoration: underline
+}
+
+footer .footer__contacts {
+    display: table;
+    margin: 0 0 0 auto;
+}
+footer .footer__contacts li {
+    display: flex;
+    color:#fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+footer .footer__contacts li a {
+    color:#fff;
+    font-size: 16px;
+}
+footer .footer__contacts li a:hover {
+    text-decoration: underline
+}
+footer .footer__icon {
+    width: 20px;
+    text-align: center;
+    margin-right: 5px
+}

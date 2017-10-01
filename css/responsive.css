@@ -1,0 +1,108 @@
+@media (max-width: 1200px) {
+    .buttons-row {
+        flex-wrap: wrap
+    }
+    .buttons-row .bt {
+        margin-bottom:30px
+    }
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 992px) {
+
+    .main-table__item {
+        flex-basis:50%
+    }
+}
+@media (min-width: 768px) AND (max-width: 1024px) {
+
+
+}
+
+
+@media (max-width: 768px) {
+    footer .copy {
+        margin-top: 20px;
+    }
+    footer .footer__contacts {
+        margin:0
+    }
+    .breadcrumb {
+        padding:8px 15px
+    }
+    h2.h2 {
+        font-size: 18px;
+        margin:60px auto 30px;
+    }
+    h2.h2:before {
+        left:30px; right:30px;
+    }
+    h2.h2 span {
+        padding:0 12px;
+    }
+    .slick-list {
+        margin:0 30px;
+    }
+    .partners-slider .slick-arrow,
+    .partners-slider .slick-arrow span {
+        width:28px; height:28px;
+        background-size:100% 100%!important
+    }
+    .partners-slider .slick-arrow.slick-prev {
+        left:-5px
+    }
+    .partners-slider .slick-arrow.slick-next {
+        right:-5px
+    }
+    .slick-dots {
+        bottom:5px;
+    }
+    .main-table__item {
+        flex-basis:100%
+    }
+    .main-table .main-table__project-front .hover-content h3 {
+        font-size:25px
+    }
+    .main-news__big {
+        margin-bottom: 22px;
+    }
+    .main-news {
+        margin-bottom:40px;
+    }
+    .main-table--second {
+        padding:0 15px
+    }
+    .main-table--second .main-table__project-front .hover-content h3 {
+        font-size: 16px
+    }
+    .main-table--second .main-table__project-back .hover-content h4 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .main-news .main-news__small .main-news__content {
+        padding:15px;
+    }
+    .main-news .main-news__small .img-wrap {
+        padding-right:15px;
+    }
+    .main-about__img-wrap {
+        text-align: center;
+        margin-bottom: 20px
+    }
+    .main-about__inner {
+        display: block
+    }
+    .main-about__items {
+        padding-bottom:0
+    }
+    .main-about__img {
+        position: static;
+        width: auto;
+        max-width: 100%;
+    }
+    .buttons-row__wrap {
+        padding:0 15px;
+        margin-bottom:30px
+    }
+}
