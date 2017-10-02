@@ -819,3 +819,121 @@ h2.h2:before {
 .slick-arrow.slick-next:hover span {
     background:transparent url('../img/icon/arrow-right-hover.png') no-repeat left top;
 }
+
+.sidebar {
+    padding-left: 0;
+    font-weight: 500;
+}
+.sidebar__title {
+    color: #3c3b3b;
+    font-size: 26px;
+    margin-bottom: 20px
+}
+.sidebar__list {
+    margin-bottom: 60px
+}
+.sidebar__list li {
+    margin-bottom: 25px
+}
+.sidebar__list a {
+    color: #313131;
+    font-size: 16px
+}
+.sidebar__list a:hover {
+    color:#FFD135
+}
+.tags li {
+    float: left;
+    margin:0 20px 15px 0;
+}
+.tags li a {
+    color:#6c6c6c;
+    font-size: 16px
+}
+.tags li a:hover {
+    color:#FFD135
+}
+
+.articles__wrap {
+    padding-left:0
+}
+.articles {
+    padding-left: 0
+}
+.articles-item {
+    display: table;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.articles-item__line {
+    height:1px;
+    background-color: #f0f0f0;
+    margin-top: 40px;
+}
+
+.articles__title {
+    font-size: 26px;
+    color: #313131;
+    margin-bottom: 45px;
+    font-weight: 500
+}
+.articles-item__title {
+    font-weight: 500;
+    font-size: 20px;
+    color:#313131;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 7px;
+    margin-bottom: 15px;
+    text-transform: uppercase
+}
+.articles-item__img {
+    padding-right:0
+}
+.articles-item__img img {
+    width: 100%
+}
+.articles-item__desc,
+.articles-content__desc {
+    font-weight: 500;
+    color:#313131;
+    font-size: 16px;
+    line-height: 22px;
+}
+.articles-item__footer {
+    margin-top: 10px
+}
+.articles-item__footer li {
+    display: inline-block;
+    font-size: 12px;
+    color:#838383;
+    margin-right: 15px;
+    font-weight: 500;
+}
+.articles-item__footer li.right {
+    float: right;
+    margin-right: 0
+}
+.articles-item__footer li.right a {
+    font-size: 14px;
+    color:#1fbad6;
+}
+.articles-item__footer li.right a:hover {
+    color:#FFD135;
+}
+.articles-item__footer li img {
+    vertical-align: middle
+}
+
+.articles-content__img {
+    float: left;
+    padding: 0 20px 10px 0
+}
+.articles-content__desc p {
+    margin-bottom: 10px
+}
+.articles-content .articles-item__footer {
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+    margin-bottom: 60px
+}
