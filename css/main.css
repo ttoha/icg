@@ -597,15 +597,18 @@ h2.h2:before {
 }
 
 .partners-slider .slick-arrow,
-.main-table-slider .slick-arrow {
+.main-table-slider .slick-arrow,
+.reviews .slick-arrow {
     width: 56px; height:56px;
 }
 .partners-slider .slick-arrow span,
-.main-table-slider .slick-arrow span {
+.main-table-slider .slick-arrow span,
+.reviews .slick-arrow span {
     width: 56px; height:56px;
 }
 .partners-slider .slick-arrow.slick-disabled,
-.main-table-slider .slick-arrow.slick-disabled {
+.main-table-slider .slick-arrow.slick-disabled,
+.reviews .slick-arrow.slick-disabled {
     opacity:.13
 }
 .partners-slider .slick-arrow.slick-prev,
@@ -619,13 +622,17 @@ h2.h2:before {
 .partners-slider .slick-arrow.slick-prev span,
 .partners-slider .slick-arrow.slick-prev:hover span,
 .main-table-slider .slick-arrow.slick-prev span,
-.main-table-slider .slick-arrow.slick-prev:hover span {
+.main-table-slider .slick-arrow.slick-prev:hover span,
+.reviews .slick-arrow.slick-prev span,
+.reviews .slick-arrow.slick-prev:hover span {
     background:transparent url('../img/icon/arrow-left--grey.png') no-repeat left top;
 }
 .partners-slider .slick-arrow.slick-next span,
 .partners-slider .slick-arrow.slick-next:hover span,
 .main-table-slider .slick-arrow.slick-next span,
-.main-table-slider .slick-arrow.slick-next:hover span {
+.main-table-slider .slick-arrow.slick-next:hover span,
+.reviews .slick-arrow.slick-next span,
+.reviews .slick-arrow.slick-next:hover span {
     background:transparent url('../img/icon/arrow-right--grey.png') no-repeat left top;
 }
 .partners .bt.bt-blue {
@@ -819,6 +826,13 @@ h2.h2:before {
 .slick-arrow.slick-next:hover span {
     background:transparent url('../img/icon/arrow-right-hover.png') no-repeat left top;
 }
+
+.reviews img {
+    max-width: 100%;
+    display: table;
+    margin: 0 auto;
+}
+
 
 .sidebar {
     padding-left: 0;

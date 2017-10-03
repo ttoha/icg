@@ -45,15 +45,23 @@
         margin:0 30px;
     }
     .partners-slider .slick-arrow,
-    .partners-slider .slick-arrow span {
+    .partners-slider .slick-arrow span,
+    .reviews .slick-arrow,
+    .reviews .slick-arrow span {
         width:28px; height:28px;
         background-size:100% 100%!important
     }
     .partners-slider .slick-arrow.slick-prev {
         left:-5px
     }
+    .reviews .slick-arrow.slick-prev {
+        left:10px
+    }
     .partners-slider .slick-arrow.slick-next {
         right:-5px
+    }
+    .reviews .slick-arrow.slick-next {
+        right:10px;
     }
     .slick-dots {
         bottom:5px;

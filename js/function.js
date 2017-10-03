@@ -26,6 +26,14 @@ $( document ).ready(function() {
             }
         ]
     });
+    $('.reviews').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        prevArrow: '<div data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button"><span></span></div>',
+        nextArrow: '<div data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button"><span></span></div>'
+    });
 
     $('.partners-slider').slick({
         infinite: false,
