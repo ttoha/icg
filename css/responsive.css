@@ -10,9 +10,23 @@
 
 }
 @media (max-width: 992px) {
-
+    .partners-page .container {
+        padding:0 15px;
+    }
+    .partners-page__item {
+        margin-bottom: 40px;
+    }
     .main-table__item {
         flex-basis:50%
+    }
+    .filter__inner {
+        flex-direction: column
+    }
+    .filter__search {
+        margin-bottom: 20px
+    }
+    .filter__category {
+        margin-left: 0
     }
 }
 @media (min-width: 768px) AND (max-width: 1024px) {
@@ -112,5 +126,12 @@
     .buttons-row__wrap {
         padding:0 15px;
         margin-bottom:30px
+    }
+    .partners-page__item {
+        margin-bottom: 0;
+        min-height: inherit
+    }
+    .filter__category select {
+        width: auto;
     }
 }
