@@ -1126,3 +1126,78 @@ h2.h2:before {
     display: flex;
     align-items: center
 }
+
+.contacts {
+    background-color: #f8f8f8;
+}
+.contacts__inner {
+    width: 100%;
+    max-width: 490px;
+    margin-right: 0;
+    padding:50px 0;
+}
+.contacts__items {
+    padding-left: 0
+}
+.contacts__item {
+    font-size: 14px;
+    margin-bottom: 15px
+}
+.contacts__item img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.contacts__form {
+    margin-top: 105px;
+}
+.contacts__form-item {
+    padding-left: 0
+}
+.contacts__form-item--input {
+    padding-right: 3px;
+}
+.contacts__form-bt {
+    padding-left: 0
+}
+.contacts__form-title {
+    font-size: 16px;
+    color: #1d1d1d;
+    margin-bottom: 10px;
+}
+.contacts__form input {
+    width: 100%;
+    height: 45px;
+    border:1px solid #ebebeb;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 12px;
+    margin-bottom: 3px;
+    font-weight: 100
+}
+.contacts__form textarea {
+    border:1px solid #ebebeb;
+    width: 100%;
+    height: 92px;
+    border-radius: 5px;
+    font-size: 12px;
+    padding:18px 0 0 10px;
+    resize: none;
+    font-weight: 100
+}
+.contacts__form-bt {
+    margin-top: 10px
+}
+.contacts__form-bt .bt {
+    height: 42px;
+    line-height: 42px;
+    width: auto;
+    margin: 0 0 0 auto;
+    padding: 0 20px;
+}
+.map-container {
+    padding-right: 0
+}
+#map {
+    width: 100%;
+    height: 470px
+}

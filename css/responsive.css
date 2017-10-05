@@ -7,7 +7,12 @@
     }
 }
 @media (max-width: 1024px) {
-
+    .contacts__items {
+        padding-left: 15px;
+    }
+    .contacts__form {
+        padding-left: 15px
+    }
 }
 @media (max-width: 992px) {
     .partners-page .container {
@@ -133,5 +138,14 @@
     }
     .filter__category select {
         width: auto;
+    }
+    .contacts__form-item--input {
+        padding-right: 15px
+    }
+    .map-container {
+        padding-left: 0
+    }
+    .contacts__form {
+        margin-top: 30px
     }
 }
