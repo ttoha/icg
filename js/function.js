@@ -85,4 +85,11 @@ $( document ).ready(function() {
             }
         ]
     });
+
+    $('.mobile-menu').on('click', function(){
+       $('#cssmenu').toggleClass('open');
+    });
+    $('.menu__inner li').on('click', function(){
+        $(this).toggleClass('openli');
+    })
 });

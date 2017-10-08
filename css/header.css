@@ -1,4 +1,9 @@
-header {}
+header {
+    position: sticky;
+    background-color: #fff;
+    top: 0;
+    z-index: 10
+}
 header .container {
     display: flex;
     padding: 0;
@@ -18,11 +23,17 @@ header .logo {
     width: 100%;
 }
 .header-line ul.header-line__ul > li {
+    position: relative;
     padding:8px 0;
     float: left;
     font-size: 12px;
     color: #fff;
 }
+.foote_menu__inner {
+    display: flex;
+    justify-content: center
+}
+.foote_menu__inner .header-line__ul__inner,
 .header-line ul.header-line__ul > li .header-line__ul__inner {
     display: flex;
     line-height:17px;
@@ -31,28 +42,34 @@ header .logo {
     margin-right:15px;
     border-right:1px solid rgba(255,255,255,.3);
 }
+.foote_menu__inner .header-line__ul__inner {
+    border-right: 0
+}
 .header-line ul.header-line__ul > li:nth-last-child(1) .header-line__ul__inner,
 .header-line ul.header-line__ul > li:nth-last-child(2) .header-line__ul__inner {
     padding-right:0;
     margin-right:0;
     border:0
 }
+.foote_menu__inner .header-line__icon,
 .header-line ul.header-line__ul > li .header-line__icon {
     margin-right:5px;
     display:flex;
     align-items: center
 }
+.foote_menu__inner .header-line__title a,
 .header-line ul.header-line__ul > li .header-line__title a {
     font-size: 12px;
     color: #fff;
 }
+.foote_menu__inner .header-line__title a:hover,
 .header-line ul.header-line__ul > li .header-line__title a:hover {
     text-decoration: underline
 }
-.header-line .search {
+.search {
     display: flex
 }
-.header-line .search .search__txt {
+.search .search__txt {
     background-color: transparent;
     border:0;
     border-bottom:1px solid rgba(255,255,255,.6);
@@ -60,18 +77,20 @@ header .logo {
     width: 100%;
     max-width: 180px
 }
-.header-line .search .search__btn {
+.search .search__btn {
     background-color:transparent;
     border:0;
     margin:0; padding:0;
 }
-.header-line ul.header-line__ul > li.lang {
+.header-line__ul > li.lang {
     position:relative
 }
 .header-line ul.header-line__ul > li.lang .header-line__title {
     margin-right: 5px
 }
-.header-line ul.header-line__ul > li.lang ul {
+.foote_menu__inner .lang ul,
+.header-line ul.header-line__ul > li.lang ul,
+.header-line ul.header-line__ul > li.phone ul.header-line__drop {
     border: 1px solid #ededed;
     background-color: #fff;
     position: absolute;
@@ -86,14 +105,19 @@ header .logo {
     transition: opacity .3s ease, top .25s ease;
     z-index: 1000;
 }
-.header-line ul.header-line__ul > li.lang ul li {
+.foote_menu__inner .lang ul li,
+.header-line ul.header-line__ul > li.lang ul li,
+.header-line ul.header-line__ul > li.phone ul.header-line__drop li {
     padding: 5px 10px;
     border-bottom: 1px solid rgba(49,49,49,.05);
 }
-.header-line ul.header-line__ul > li.lang ul li:last-of-type {
+.header-line ul.header-line__ul > li.lang ul li:last-of-type,
+.header-line ul.header-line__ul > li.phone ul.header-line__drop li:last-of-type {
     border:0
 }
-.header-line ul.header-line__ul > li.lang ul li a {
+.foote_menu__inner .lang ul li a,
+.header-line ul.header-line__ul > li.lang ul li a,
+.header-line ul.header-line__ul > li.phone ul.header-line__drop li a {
     white-space: nowrap;
     font-size: 14px;
     color: #313131;
@@ -109,8 +133,46 @@ header .logo {
     left:50%; top: 33px;
     opacity: 1;
 }
+.foote_menu__inner .lang {
+    position: relative;
+    color:#fff;
+}
+.foote_menu__inner .lang ul {
+    position: absolute!important
+}
+.foote_menu__inner .lang .header-line__title {
+    font-size: 13px;
+    margin-right: 5px
+}
+.foote_menu__inner .lang ul li a {
+    font-size: 13px!important;
+    text-align: left
+}
 .header-line ul.header-line__ul > li.login {
     float: right
+}
+
+.menu .mobile-menu {
+    display: flex;
+    align-items: center;
+}
+.menu .mobile-menu .mobile-menu__icon--close {
+    display: none;
+}
+.menu.open .mobile-menu .mobile-menu__icon--close {
+    display: block;
+}
+.menu.open .mobile-menu .mobile-menu__icon--open {
+    display: none;
+}
+.foote_menu__inner {
+    text-align: center
+}
+.foote_menu__inner .search {
+    display: inline-flex;
+    margin: 0 auto;
+    align-items:flex-end;
+    color:#fff
 }
 
 #cssmenu {
@@ -129,15 +191,6 @@ header .logo {
     justify-content: space-between;
     width: 100%;
     z-index: 500;
-}
-#cssmenu:after,
-#cssmenu > ul:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
 }
 
 #cssmenu > ul > li {
@@ -282,129 +335,4 @@ header .logo {
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
-}
-@media all and (max-width: 800px),
-    only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px),
-    only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px),
-    only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px),
-    only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px),
-    only screen and (min-resolution: 192dpi) and (max-width: 1024px),
-    only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
-    #cssmenu {
-        width: auto;
-    }
-    #cssmenu.align-center ul {
-        text-align: left;
-    }
-    #cssmenu.align-right > ul > li {
-        float: none;
-    }
-    #cssmenu ul {
-        width: auto;
-    }
-    #cssmenu .submenuArrow,
-    #cssmenu #indicatorContainer {
-        display: none;
-    }
-    #cssmenu > ul {
-        height: auto;
-        display: block;
-    }
-    #cssmenu > ul > li {
-        float: none;
-    }
-    #cssmenu li,
-    #cssmenu > ul > li {
-        display: none;
-    }
-    #cssmenu ul ul,
-    #cssmenu ul ul ul,
-    #cssmenu ul > li:hover > ul,
-    #cssmenu ul ul > li:hover > ul,
-    #cssmenu.align-right ul ul,
-    #cssmenu.align-right ul ul ul,
-    #cssmenu.align-right ul > li:hover > ul,
-    #cssmenu.align-right ul ul > li:hover > ul {
-        position: relative;
-        left: auto;
-        top: auto;
-        opacity: 1;
-        padding-left: 0;
-        padding-right: 0;
-        right: auto;
-    }
-    #cssmenu ul .has-sub::after {
-        display: none;
-    }
-    #cssmenu ul li a {
-        padding: 12px 20px;
-    }
-    #cssmenu ul ul li a {
-        border: 0;
-        background: none;
-        width: auto;
-        padding: 8px 35px;
-    }
-    #cssmenu.align-right ul ul li a {
-        text-align: left;
-    }
-    #cssmenu ul ul li:hover > a {
-        background: none;
-        color: #8c9195;
-    }
-    #cssmenu ul ul ul a {
-        padding: 8px 50px;
-    }
-    #cssmenu ul ul ul ul a {
-        padding: 8px 65px;
-    }
-    #cssmenu ul ul ul ul ul a {
-        padding: 8px 80px;
-    }
-    #cssmenu ul ul ul ul ul ul a {
-        padding: 8px 95px;
-    }
-    #cssmenu > ul > #menu-button {
-        display: block;
-        cursor: pointer;
-    }
-    #cssmenu #menu-button > a {
-        padding: 14px 20px;
-    }
-    #cssmenu ul.open li,
-    #cssmenu > ul.open > li {
-        display: block;
-    }
-    #cssmenu > ul.open > li#menu-button > a {
-        color: #fff;
-        border-bottom: 1px solid rgba(150, 150, 150, 0.1);
-    }
-    #cssmenu ul ul::after {
-        display: none;
-    }
-    #cssmenu #menu-button::after {
-        display: block;
-        content: '';
-        position: absolute;
-        height: 3px;
-        width: 22px;
-        border-top: 2px solid #7a8189;
-        border-bottom: 2px solid #7a8189;
-        right: 20px;
-        top: 15px;
-    }
-    #cssmenu #menu-button::before {
-        display: block;
-        content: '';
-        position: absolute;
-        height: 3px;
-        width: 22px;
-        border-top: 2px solid #7a8189;
-        right: 20px;
-        top: 25px;
-    }
-    #cssmenu ul.open #menu-button::after,
-    #cssmenu ul.open #menu-button::before {
-        border-color: #fff;
-    }
 }

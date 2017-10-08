@@ -5,6 +5,17 @@
     .buttons-row .bt {
         margin-bottom:30px
     }
+    .hidden-big {
+        display: none
+    }
+    .visible-big {
+        display: block
+    }
+    .header-line ul.header-line__ul > li.phone:hover ul.header-line__drop {
+        left: 50%;
+        top: 31px;
+        opacity: 1;
+    }
 }
 @media (max-width: 1024px) {
     .contacts__items {
@@ -32,6 +43,95 @@
     }
     .filter__category {
         margin-left: 0
+    }
+    header .container {
+        justify-content: space-between
+    }
+    #cssmenu {
+        position: static
+    }
+    #cssmenu .mobile-menu {
+        width: 75px;
+        margin: 0 0 0 auto;
+        cursor: pointer;
+    }
+    #cssmenu .menu__inner {
+        box-shadow: 0 10px 15px rgba(0,0,0,.4);
+    }
+    .mobile-menu__icon {
+        margin-right: 5px
+    }
+    .mobile-menu__title {
+        font-size: 14px;
+        font-weight: 500
+    }
+    #cssmenu .menu__inner {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        left:0; right:0;
+        top: 60px;
+        width: 100%;
+    }
+    #cssmenu.open .menu__inner {
+        display: block
+    }
+    #cssmenu .menu__inner a {
+        display: table;
+        margin:0 auto;
+    }
+    #cssmenu > ul > li {
+        padding-bottom: 0
+    }
+    #cssmenu .menu__inner li ul {
+        display: block;
+        position: static;
+        transform: none;
+        opacity: 1
+    }
+
+    #cssmenu .menu__inner li ul li.has-sub,
+    #cssmenu .menu__inner li ul li.has-sub > a {
+        background-color: #f8f8f8
+    }
+    #cssmenu ul ul li:hover > a {
+        background-color: #fff
+    }
+    #cssmenu ul ul li a {
+        padding-left: 0;
+        padding-right: 0;
+        white-space: normal
+    }
+    #cssmenu .menu__inner li ul li.has-sub:after {
+        display: none
+    }
+    #cssmenu .menu__inner li ul {
+        display: none
+    }
+    #cssmenu .menu__inner li.openli > ul {
+        display: block
+    }
+    #cssmenu .foote_menu {
+        background-color: #3e4651;
+    }
+    #cssmenu .foote_menu {
+        padding-top: 30px;
+    }
+    #cssmenu .foote_menu:last-of-type {
+        padding-bottom: 30px
+    }
+    #cssmenu .foote_menu__inner .lang:hover ul {
+        left:0; top: 15px;
+        opacity: 1;
+        display: block!important
+    }
+    #cssmenu .foote_menu__inner .login .header-line__ul__inner {
+        margin-right: 0;
+        padding-right: 0
+    }
+
+    .modal-form .modal-form__label {
+        text-align: left
     }
 }
 @media (min-width: 768px) AND (max-width: 1024px) {
@@ -147,5 +247,12 @@
     }
     .contacts__form {
         margin-top: 30px
+    }
+    .modal-footer.buttons-footer {
+        flex-direction: column;
+        align-items: center
+    }
+    .modal-footer.buttons-footer .buttons-footer__item:not(:last-of-type) {
+        margin-bottom: 15px;
     }
 }

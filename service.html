@@ -17,7 +17,7 @@
     <script type="text/javascript" src="js/function.js"></script>
 </head>
 <body>
-    <div class="header-line">
+    <div class="header-line hidden-xs hidden-sm">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 header-line__inner">
@@ -42,17 +42,25 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="phone">
                             <div class="header-line__ul__inner">
                                 <div class="header-line__icon">
                                     <img src="img/icon/phone.png" alt="" />
                                 </div>
-                                <div class="header-line__title">
+                                <div class="header-line__title hidden-big">
                                     <a href="tel:+38 (067) 123 45 67">+38 (067) 123 45 67</a>
                                 </div>
+                                <ul class="header-line__drop">
+                                    <li>
+                                        <a href="tel:+38 (067) 123 45 67">+38 (067) 123 45 67</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+38 (067) 123 45 67">+38 (067) 123 45 67</a>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
-                        <li>
+                        <li class="hidden-big">
                             <div class="header-line__ul__inner">
                                 <div class="header-line__icon">
                                     <img src="img/icon/phone.png" alt="" />
@@ -71,10 +79,10 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="hidden-xs hidden-sm">
                             <div class="header-line__ul__inner">
                                 <form class="search" action="#">
-                                   <input class="search__txt" type="text" value="" />
+                                   <!--input class="search__txt" type="text" value="" /-->
                                    <button class="search__btn" type="submit">
                                        <img src="img/icon/search.png" alt="">
                                    </button>
@@ -121,8 +129,24 @@
                     <img src="img/logo.png" alt="ICG" />
                 </a>
             </div>
+
             <nav class="menu" id="cssmenu">
-                <ul>
+                <div class="visible-xs visible-sm">
+                    <div class="mobile-menu">
+                        <div class="mobile-menu__icon">
+                            <span class="mobile-menu__icon--open">
+                                <img src="img/icon/menu.png" alt="">
+                            </span>
+                            <span class="mobile-menu__icon--close">
+                                <img src="img/icon/menu-close.png" alt="">
+                            </span>
+                        </div>
+                        <div class="mobile-menu__title">
+                            MENU
+                        </div>
+                    </div>
+                </div>
+                <ul class="menu__inner">
                     <li>
                         <a href="#" title="О компании">О компании</a>
                     </li>
@@ -185,10 +209,53 @@
                     <li>
                         <a href="#" title="Контакты">Контакты</a>
                     </li>
+                    <li class="foote_menu visible-xs visible-sm">
+                        <div class="foote_menu__inner">
+                            <form class="search" action="#">
+                               <input class="search__txt" type="text" value="" />
+                               <button class="search__btn" type="submit">
+                                   <img src="img/icon/search.png" alt="">
+                               </button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="foote_menu visible-xs visible-sm">
+                        <div class="foote_menu__inner">
+                            <div class="lang">
+                                <div class="header-line__ul__inner">
+                                    <div class="header-line__title">
+                                        RU
+                                    </div>
+                                    <div class="header-line__icon">
+                                        <img src="img/icon/arrow-bottom.png" alt="" />
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#" title="UA">UA</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="ENG">ENG</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="login">
+                                <div class="header-line__ul__inner">
+                                    <div class="header-line__icon">
+                                        <img src="img/icon/login.png" alt="" />
+                                    </div>
+                                    <div class="header-line__title">
+                                        <a href="#" title="Вход / Регистрация">Вход / Регистрация</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
+
 
     <div class="breadcrumb__wrap">
         <ol class="breadcrumb">
@@ -204,7 +271,7 @@
     </div>
 
     <section class="custom-content container">
-        <img src="img/content/service-img1.png" style="float:left; margin-right: 10px" alt="" />
+        <img src="img/content/service-img1.png" style="float:left; margin:0 20px 10px 0;" alt="" />
         <p style="font-size:26px">Сопровождение <strong>процедур заказчика</strong></p>
         <p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты. Когда от
 милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и, прильнув к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок</p>
@@ -234,7 +301,7 @@
     <div class="container buttons-row__wrap buttons-row__wrap--first">
         <div class="buttons-row">
             <div>
-                <a href="#" class="bt bt-blue" title="как это работает">как это работает</a>
+                <a href="#" class="bt bt-blue" data-toggle="modal" data-target="#question" title="как это работает">как это работает</a>
             </div>
             <div>
                 <a href="#" class="bt bt-yellow" title="способ оплаты">способ оплаты</a>
@@ -246,7 +313,7 @@
                 <a href="#" class="bt bt-grey" title="задать вопрос">задать вопрос</a>
             </div>
             <div>
-                <a href="#" class="bt bt-red" title="заказать звонок">заказать звонок</a>
+                <a href="#" class="bt bt-red" data-toggle="modal" data-target="#callback" title="заказать звонок">заказать звонок</a>
             </div>
         </div>
     </div>
@@ -805,9 +872,6 @@
     </section>
     </div>
 
-
-
-
     <footer>
         <div class="container">
             <div class="row">
@@ -891,5 +955,209 @@
             </div>
         </div>
     </footer>
+<div class="modal fade" id="callback" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+                <img src="img/icon/close.png" alt="">
+            </span>
+        </button>
+        <h4 class="modal-title">Оформление заявки</h4>
+      </div>
+      <form action="#">
+      <div class="modal-body modal-form">
+          <div class="container_fluid">
+              <div class="row">
+                  <div class="col-xs-12 col-md-4 modal-form__label">
+                      <label for="name">
+                          Ваше имя:
+                      </label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 modal-form__input">
+                      <input id="name" type="text" value="">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12 col-md-4 modal-form__label">
+                      <label for="mail">
+                          E-mail:
+                      </label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 modal-form__input">
+                      <input id="mail" type="text" value="">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12 col-md-4 modal-form__label">
+                      <label for="phone">
+                          Телефон:
+                      </label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 modal-form__input">
+                      <input id="phone" type="text" value="">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12 col-md-4 modal-form__label">
+                      <label for="company">
+                          Название компании:
+                      </label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 modal-form__input">
+                      <input id="company" type="text" value="">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12 col-md-4 modal-form__label">
+                      <label for="code">
+                          Код ЕДРПОУ:
+                      </label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 modal-form__input">
+                      <input id="code" type="text" value="">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12 col-md-4 modal-form__label">
+                      <label for="tax_number">
+                          Налоговый номер:
+                      </label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 modal-form__input">
+                      <input id="tax_number" type="text" value="">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12 col-md-4 modal-form__label">
+                      <label for="code_prozzoro">
+                          Код в процедуре Прозорро:
+                      </label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 modal-form__input">
+                      <input id="code_prozzoro" type="text" value="">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12 col-md-4 modal-form__label">
+                      <label for="file">
+                          Прикрепить файлы:
+                      </label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 modal-form__input modal-form__input--file">
+                      <input id="file" type="file" value="">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12 col-md-4 modal-form__label">
+                      <label for="priority">
+                          Срочность:
+                      </label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 modal-form__input">
+                      <select name="" id="priority">
+                          <option value="">
+                              Высокая
+                          </option>
+                          <option value="">
+                              Низкая
+                          </option>
+                      </select>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12 col-md-4 modal-form__label">
+
+                  </div>
+                  <div class="col-xs-12 col-md-8 modal-form__input modal-form__input--check">
+                      <label>
+                          <input id="" type="checkbox" value="">
+                          Согласен с публичной офертой
+                      </label>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal-footer buttons-footer">
+           <div class="buttons-footer__item">
+                <button class="bt bt-blue" type="reset">В предыдущее меню</button>
+           </div>
+           <div class="buttons-footer__item">
+                <button class="bt bt-red" type="submit">Отправить</button>
+           </div>
+      </div>
+      </form>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+<div class="modal fade" id="question" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+                <img src="img/icon/close.png" alt="">
+            </span>
+        </button>
+        <h4 class="modal-title">Задать вопрос</h4>
+      </div>
+      <form action="#">
+      <div class="modal-body modal-form">
+          <div class="container_fluid">
+              <div class="row">
+                  <div class="col-xs-12 col-md-4 modal-form__label">
+                      <label for="name2">
+                          Ваше имя:
+                      </label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 modal-form__input">
+                      <input id="name2" type="text" value="">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12 col-md-4 modal-form__label">
+                      <label for="mail2">
+                          E-mail:
+                      </label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 modal-form__input">
+                      <input id="mail2" type="text" value="">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12 col-md-4 modal-form__label">
+                      <label for="phone2">
+                          Телефон:
+                      </label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 modal-form__input">
+                      <input id="phone2" type="text" value="">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12 col-md-4 modal-form__label">
+                      <label for="text">
+                          Сообщение:
+                      </label>
+                  </div>
+                  <div class="col-xs-12 col-md-8 modal-form__input">
+                      <textarea name="" id="text" cols="30" rows="10"></textarea>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal-footer buttons-footer">
+           <div class="buttons-footer__item">
+
+           </div>
+           <div class="buttons-footer__item">
+                <button class="bt bt-red" type="submit">Отправить</button>
+           </div>
+      </div>
+      </form>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
 </body>
 </html>

@@ -1,0 +1,77 @@
+.modal-content {
+    border-radius:2px
+}
+.modal-body {
+    font-size: 20px
+}
+.modal-header {
+    text-align: center;
+    font-size: 26px;
+    background-color: #fafafa
+}
+.modal-header .close {
+    margin-top:9px;
+    opacity: 1;
+}
+.modal-header .close:hover {
+    opacity:.6
+}
+.modal-footer .popap__download {
+    float: left;
+    color:#acacac;
+}
+.modal-footer .popap__download:hover {
+    opacity:.8
+}
+.modal-footer .popap__download img {
+    vertical-align: middle
+}
+
+.modal-form .modal-form__label {
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: right;
+}
+.modal-form .modal-form__input input,
+.modal-form .modal-form__input select,
+.modal-form .modal-form__input textarea {
+    width: 100%;
+    border:1px solid #ebebeb;
+    border-radius: 3px;
+    height:40px;
+    padding-left: 10px
+}
+.modal-form .modal-form__input textarea {
+    height: 160px;
+}
+.modal-form .modal-form__input--file {
+    padding-top: 5px
+}
+.modal-form .modal-form__input--file input {
+    width: auto;
+    border:0;
+    padding-left:0
+}
+.modal-form .modal-form__input--check input {
+    width: auto;
+    height: auto
+}
+.modal-form .modal-form__input--check label {
+    font-size: 18px;
+}
+.modal-form .row {
+    margin-bottom: 15px;
+}
+#callback .modal-dialog,
+#question .modal-dialog {
+    width: auto;
+    max-width: 945px;
+}
+.modal-footer.buttons-footer {
+    display: flex;
+    justify-content:space-between;
+}
+.modal-footer.buttons-footer:before,
+.modal-footer.buttons-footer:after {
+    display: none
+}

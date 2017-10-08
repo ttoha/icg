@@ -17,7 +17,7 @@
     <script type="text/javascript" src="js/function.js"></script>
 </head>
 <body>
-    <div class="header-line">
+    <div class="header-line hidden-xs hidden-sm">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 header-line__inner">
@@ -42,17 +42,25 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="phone">
                             <div class="header-line__ul__inner">
                                 <div class="header-line__icon">
                                     <img src="img/icon/phone.png" alt="" />
                                 </div>
-                                <div class="header-line__title">
+                                <div class="header-line__title hidden-big">
                                     <a href="tel:+38 (067) 123 45 67">+38 (067) 123 45 67</a>
                                 </div>
+                                <ul class="header-line__drop">
+                                    <li>
+                                        <a href="tel:+38 (067) 123 45 67">+38 (067) 123 45 67</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+38 (067) 123 45 67">+38 (067) 123 45 67</a>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
-                        <li>
+                        <li class="hidden-big">
                             <div class="header-line__ul__inner">
                                 <div class="header-line__icon">
                                     <img src="img/icon/phone.png" alt="" />
@@ -71,10 +79,10 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="hidden-xs hidden-sm">
                             <div class="header-line__ul__inner">
                                 <form class="search" action="#">
-                                   <input class="search__txt" type="text" value="" />
+                                   <!--input class="search__txt" type="text" value="" /-->
                                    <button class="search__btn" type="submit">
                                        <img src="img/icon/search.png" alt="">
                                    </button>
@@ -121,8 +129,24 @@
                     <img src="img/logo.png" alt="ICG" />
                 </a>
             </div>
+
             <nav class="menu" id="cssmenu">
-                <ul>
+                <div class="visible-xs visible-sm">
+                    <div class="mobile-menu">
+                        <div class="mobile-menu__icon">
+                            <span class="mobile-menu__icon--open">
+                                <img src="img/icon/menu.png" alt="">
+                            </span>
+                            <span class="mobile-menu__icon--close">
+                                <img src="img/icon/menu-close.png" alt="">
+                            </span>
+                        </div>
+                        <div class="mobile-menu__title">
+                            MENU
+                        </div>
+                    </div>
+                </div>
+                <ul class="menu__inner">
                     <li>
                         <a href="#" title="О компании">О компании</a>
                     </li>
@@ -185,10 +209,53 @@
                     <li>
                         <a href="#" title="Контакты">Контакты</a>
                     </li>
+                    <li class="foote_menu visible-xs visible-sm">
+                        <div class="foote_menu__inner">
+                            <form class="search" action="#">
+                               <input class="search__txt" type="text" value="" />
+                               <button class="search__btn" type="submit">
+                                   <img src="img/icon/search.png" alt="">
+                               </button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="foote_menu visible-xs visible-sm">
+                        <div class="foote_menu__inner">
+                            <div class="lang">
+                                <div class="header-line__ul__inner">
+                                    <div class="header-line__title">
+                                        RU
+                                    </div>
+                                    <div class="header-line__icon">
+                                        <img src="img/icon/arrow-bottom.png" alt="" />
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#" title="UA">UA</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="ENG">ENG</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="login">
+                                <div class="header-line__ul__inner">
+                                    <div class="header-line__icon">
+                                        <img src="img/icon/login.png" alt="" />
+                                    </div>
+                                    <div class="header-line__title">
+                                        <a href="#" title="Вход / Регистрация">Вход / Регистрация</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
+
 
     <div class="breadcrumb__wrap">
         <ol class="breadcrumb">
