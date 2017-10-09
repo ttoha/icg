@@ -589,6 +589,45 @@ h2.h2:before {
     width: 100%
 }
 
+.main-slider .slick-slide {
+    position: relative
+}
+
+.main-slider .main-slider__content {
+    position: absolute;
+    color: #3e4651;
+    width: 100%;
+    max-width: 780px;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+}
+.main-slider .main-slider__title {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px
+}
+.main-slider .main-slider__desc {
+    max-width: 260px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.main-slider .main-slider__button .bt {
+    height: 50px;
+    line-height: 50px;
+    width: auto;
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 13px;
+    background-color: #FFD034;
+    border-color: #FFD034;
+}
+.main-slider .main-slider__button .bt:hover {
+    background-color: #ffe281;
+    border-color: #ffe281;
+}
+
 .partners {
     margin-bottom: 55px;
 }

@@ -16,6 +16,16 @@
         top: 31px;
         opacity: 1;
     }
+    .main-slider .main-slider__content {
+        max-width: 600px
+    }
+    .main-slider .main-slider__content .main-slider__title {
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+    .main-slider .main-slider__content .main-slider__desc {
+        margin-bottom: 15px
+    }
 }
 @media (max-width: 1024px) {
     .contacts__items {

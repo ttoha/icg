@@ -91,5 +91,22 @@ $( document ).ready(function() {
     });
     $('.menu__inner li').on('click', function(){
         $(this).toggleClass('openli');
+    });
+
+    var stickyOffset = $('header').offset().top;
+
+    $(window).scroll(function(){
+      var sticky = $('header'),
+          scroll = $(window).scrollTop();
+
+      if (scroll >= stickyOffset) sticky.addClass('fixed');
+      else sticky.removeClass('fixed');
+    });
+
+    $('.search-bt__ul').on('click', function(){
+        $('.header-line').addClass('serarch_open');
+    });
+    $('.search__btn-close').on('click', function(){
+        $('.header-line').removeClass('serarch_open');
     })
 });

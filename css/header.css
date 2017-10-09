@@ -1,8 +1,12 @@
 header {
-    position: sticky;
     background-color: #fff;
     top: 0;
+    width: 100%;
     z-index: 10
+}
+header.fixed {
+    position: fixed;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0,.4);
 }
 header .container {
     display: flex;
@@ -37,6 +41,7 @@ header .logo {
 .header-line ul.header-line__ul > li .header-line__ul__inner {
     display: flex;
     line-height:17px;
+    height: 17px;
     align-items: center;
     padding-right:15px;
     margin-right:15px;
@@ -66,22 +71,52 @@ header .logo {
 .header-line ul.header-line__ul > li .header-line__title a:hover {
     text-decoration: underline
 }
-.search {
+.header-line.serarch_open .header-line__ul {
+    display: none
+}
+.header-line.serarch_open .search {
     display: flex
+}
+.search {
+    display: none;
+    align-items: center;
+    height: 33px;
+}
+.search__txt-wrap {
+    flex-grow: 1;
+}
+.search__btn-wrap {
+    width: 70px;
+    text-align: center;
+}
+.search__btn-close {
+    width: 44px;
+    border-left:1px solid #767c83;
+    text-align: right;
+    cursor: pointer;
+    padding: 2px 0 0 0;
+}
+.search__btn:hover,
+.search-bt__ul:hover,
+.search__btn-close:hover {
+    opacity:.8
 }
 .search .search__txt {
     background-color: transparent;
     border:0;
-    border-bottom:1px solid rgba(255,255,255,.6);
     margin:0; padding:0;
     width: 100%;
-    max-width: 180px
+    font-size: 12px;
+    color: #fff
 }
 .search .search__btn {
     background-color:transparent;
     border:0;
-    margin:0; padding:0;
+    width: 100%;
+    margin:0; padding:3px 0 0 0;
 }
+
+
 .header-line__ul > li.lang {
     position:relative
 }
