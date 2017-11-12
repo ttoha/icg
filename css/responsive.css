@@ -265,4 +265,8 @@
     .modal-footer.buttons-footer .buttons-footer__item:not(:last-of-type) {
         margin-bottom: 15px;
     }
+    .buy {
+        display: block;
+        height: auto
+    }
 }
